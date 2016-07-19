@@ -21,6 +21,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+gem 'devise'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -35,7 +36,7 @@ group :development, :test do
   gem 'coveralls', require: false
   gem 'capybara'
   gem 'factory_girl_rails'
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.5.1'
   gem 'pry-rails'
   gem 'shoulda-matchers'
   gem 'valid_attribute'
