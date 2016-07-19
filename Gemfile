@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.2.3"
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -32,6 +33,16 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'coveralls', require: false
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'pry-rails'
+  gem 'shoulda-matchers'
+  gem 'valid_attribute'
+  gem 'dotenv-rails'
+  gem 'capybara-webkit'
+  gem 'database_cleaner'
+  gem 'selenium-webdriver'
 end
 
 group :development do
