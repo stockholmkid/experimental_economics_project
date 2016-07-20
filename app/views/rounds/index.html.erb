@@ -1,0 +1,11 @@
+<div class="welcome">
+  <h1 class="title">Welcome to an Economics Experiment!</h1>
+</div>
+  <h3 class="lobbytitle">Users in Lobby:</h3>
+    <% @users.each do |user| %>
+    <br>
+      ID: <%= user.id %>
+    <% end %>
+<div class="start_button">
+  <%= link_to '- Start Experiment -', round_path(@users) %>
+</div>
