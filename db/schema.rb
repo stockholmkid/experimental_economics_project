@@ -10,18 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160719193537) do
+ActiveRecord::Schema.define(version: 20160720150613) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "matches", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "rounds", force: :cascade do |t|
-    t.string  "leader",                    null: false
-    t.string  "follower",                  null: false
-    t.integer "profit",        default: 0, null: false
-    t.integer "inputleader",               null: false
-    t.integer "inputfollower",             null: false
-    t.integer "user_id",                   null: false
+    t.string  "leader"
+    t.string  "follower"
+    t.integer "profit"
+    t.integer "inputleader"
+    t.integer "inputfollower"
+    t.integer "user_id",       null: false
   end
 
   create_table "users", force: :cascade do |t|

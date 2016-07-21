@@ -1,7 +1,6 @@
 class User < ApplicationRecord
 
   has_many :rounds
-  
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   validates :studentid, numericality: { only_integer: true}, presence: true, length: { is: 6 }
